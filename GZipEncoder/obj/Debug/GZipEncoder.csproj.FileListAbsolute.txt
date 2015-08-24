@@ -1,0 +1,4 @@
+C:\Users\sc2015\Downloads\ntis-dotnet-web-services-Release2.5-master\ntis-dotnet-web-services-Release2.5-master\SubscriberService\GZipEncoder\bin\GZipEncoder.dll
+C:\Users\sc2015\Downloads\ntis-dotnet-web-services-Release2.5-master\ntis-dotnet-web-services-Release2.5-master\SubscriberService\GZipEncoder\bin\GZipEncoder.pdb
+C:\Users\sc2015\Downloads\ntis-dotnet-web-services-Release2.5-master\ntis-dotnet-web-services-Release2.5-master\SubscriberService\GZipEncoder\obj\Debug\GZipEncoder.dll
+C:\Users\sc2015\Downloads\ntis-dotnet-web-services-Release2.5-master\ntis-dotnet-web-services-Release2.5-master\SubscriberService\GZipEncoder\obj\Debug\GZipEncoder.pdb
