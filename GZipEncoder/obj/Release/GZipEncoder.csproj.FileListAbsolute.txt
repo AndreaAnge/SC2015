@@ -1,5 +1,0 @@
-C:\Users\sc2015\Downloads\ntis-dotnet-web-services-Release2.5-master\ntis-dotnet-web-services-Release2.5-master\SubscriberService\GZipEncoder\bin\Release\GZipEncoder.dll
-C:\Users\sc2015\Downloads\ntis-dotnet-web-services-Release2.5-master\ntis-dotnet-web-services-Release2.5-master\SubscriberService\GZipEncoder\bin\Release\GZipEncoder.pdb
-C:\Users\sc2015\Downloads\ntis-dotnet-web-services-Release2.5-master\ntis-dotnet-web-services-Release2.5-master\SubscriberService\GZipEncoder\obj\Release\GZipEncoder.csprojResolveAssemblyReference.cache
-C:\Users\sc2015\Downloads\ntis-dotnet-web-services-Release2.5-master\ntis-dotnet-web-services-Release2.5-master\SubscriberService\GZipEncoder\obj\Release\GZipEncoder.dll
-C:\Users\sc2015\Downloads\ntis-dotnet-web-services-Release2.5-master\ntis-dotnet-web-services-Release2.5-master\SubscriberService\GZipEncoder\obj\Release\GZipEncoder.pdb
