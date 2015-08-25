@@ -3,6 +3,8 @@ using Carmenta.ResQMapAPI.Models;
 using Carmenta.ResQMapAPI.Models.CarmentaEngineModels;
 using Carmenta.ResQMapAPI.Plugins.CustomEntities;
 using System;
+using System.Xml;
+using System.Xml.Linq;
 using System.Collections.Generic;
 using System.Globalization;
 using System.IO;
@@ -75,7 +77,7 @@ namespace SensorPlugin
         /// </summary>
         private void SetupSelectionHandling()
         {
-
+            
         }
 
         /// <summary>
@@ -95,7 +97,12 @@ namespace SensorPlugin
             var dataSet = new MemoryDataSet(Crs.Wgs84LongLat);
             var readOperator = new ReadOperator(dataSet);
 
-            //ovdje ide iscrtavanje linija ili tocaka na mapi
+            //Create the visualization operator which will visualize lines
+            var visualizationOperator = new VisualizationOperator(readOperator);
+
+
+            //Set the visualization operator as the input to the layer. Now the operator chain is complete
+            layer.Input = visualizationOperator;
 
             return dataSet;
         }
@@ -106,7 +113,9 @@ namespace SensorPlugin
         /// <param name="MidasGoldTrafficDataSet">The dataset to fill with map features.</param>
         private void FillMidasGoldTrafficDataSet(MemoryDataSet dataSet)
         {
-            //ovdje ide ucitavanje .xml datoteke i parsiranje
+            XmlReader reader = XmlReader.Create("putanja_na_disku");
+            XElement element = XElement.Load(reader);
+            reader.Close();
         }
 
         /// <summary>
