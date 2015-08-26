@@ -19,6 +19,7 @@ namespace SensorPlugin
     /// </summary>
     public class SensorPanel : CustomPanel<SensorControl>
     {
+
         /// <summary>
         /// The root model from the ResQMap API, received in the <see cref="OnAttached"/> method.
         /// </summary>
@@ -113,9 +114,14 @@ namespace SensorPlugin
         /// <param name="MidasGoldTrafficDataSet">The dataset to fill with map features.</param>
         private void FillMidasGoldTrafficDataSet(MemoryDataSet dataSet)
         {
-            XmlReader reader = XmlReader.Create("putanja_na_disku");
-            XElement element = XElement.Load(reader);
-            reader.Close();
+            //XmlReader reader = XmlReader.Create("../../Data/MIDAS_Loop_Traffic_Data.xml");
+            //XElement element = XElement.Load(reader);
+            //reader.Close();
+
+            XElement root = XElement.Load("../../Data/MIDAS_Loop_Traffic_Data.xml");
+            
+            d2LogicalModel model = new d2LogicalModel();
+            
         }
 
         /// <summary>
