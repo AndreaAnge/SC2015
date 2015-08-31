@@ -120,7 +120,7 @@ namespace SensorPlugin
 
             XElement root = XElement.Load("../../Data/MIDAS_Loop_Traffic_Data.xml");
             
-            d2LogicalModel model = new d2LogicalModel();
+            //d2LogicalModel model = new d2LogicalModel();
             
         }
 

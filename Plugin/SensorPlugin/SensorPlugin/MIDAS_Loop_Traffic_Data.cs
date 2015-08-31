@@ -977,6 +977,4 @@ namespace SensorPlugin
             }
         }
     }
-
-
 }

@@ -16,11 +16,19 @@ namespace TestingApp
         static void Main(string[] args)
         {
             XmlSerializer serializer = new XmlSerializer(typeof(d2LogicalModel));
+            d2LogicalModel d2model;
 
-            //XElement el = XElement.Load("../../Data/MIDAS_Loop_Traffic_Data.xml");
-            TextReader reader = new StreamReader("../../Data/MIDAS_Loop_Traffic_Data.xml");
-            d2LogicalModel model = (d2LogicalModel)serializer.Deserialize(reader);
-            reader.Close();
+            //XElement xelement = XElement.Load("../../Data/MIDAS_Loop_Traffic_Data.xml");
+            //TextReader reader = new StreamReader("../../Data/MIDAS_Loop_Traffic_Data.xml");
+            //d2LogicalModel model = (d2LogicalModel)serializer.Deserialize(reader);
+            //reader.Close();
+
+            using (XmlReader reader = XmlReader.Create("../../Data/MIDAS_Loop_Traffic_Data.xml"))
+            {
+                d2model = (d2LogicalModel)serializer.Deserialize(reader);
+            }
+
+
         }
     }
 }
