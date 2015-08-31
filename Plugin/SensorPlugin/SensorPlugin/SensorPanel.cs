@@ -113,9 +113,12 @@ namespace SensorPlugin
         /// <param name="MidasGoldTrafficDataSet">The dataset to fill with map features.</param>
         private void FillMidasGoldTrafficDataSet(MemoryDataSet dataSet)
         {
-            XmlReader reader = XmlReader.Create("putanja_na_disku");
-            XElement element = XElement.Load(reader);
-            reader.Close();
+            //XmlReader reader = XmlReader.Create("putanja_na_disku");
+            //XElement element = XElement.Load(reader);
+            //reader.Close();
+
+
+
         }
 
         /// <summary>

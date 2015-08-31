@@ -12,9 +12,12 @@ namespace SensorPlugin
 {
     public partial class SensorControl : UserControl
     {
-        public SensorControl()
+        private readonly SensorPanel panel;
+
+        public SensorControl(SensorPanel panel)
         {
             InitializeComponent();
+            this.panel = panel;
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -31,6 +34,14 @@ namespace SensorPlugin
                 );
         }
 
+        private void treeView1_AfterSelect(object sender, TreeViewEventArgs e)
+        {
+            TreeNode node;
+            node = e.Node;
+            MessageBox.Show(node.Text);
+        }
+
+        
        
     }
 }

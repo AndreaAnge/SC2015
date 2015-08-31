@@ -9,3 +9,14 @@ C:\Users\sc2015\Downloads\ntis-dotnet-web-services-Release2.5-master\ntis-dotnet
 C:\Users\sc2015\Downloads\ntis-dotnet-web-services-Release2.5-master\ntis-dotnet-web-services-Release2.5-master\SubscriberService\SubscriberWebService\obj\Release\SubscriberWebService.csprojResolveAssemblyReference.cache
 C:\Users\sc2015\Downloads\ntis-dotnet-web-services-Release2.5-master\ntis-dotnet-web-services-Release2.5-master\SubscriberService\SubscriberWebService\obj\Release\SubscriberWebService.dll
 C:\Users\sc2015\Downloads\ntis-dotnet-web-services-Release2.5-master\ntis-dotnet-web-services-Release2.5-master\SubscriberService\SubscriberWebService\obj\Release\SubscriberWebService.pdb
+C:\Users\sc2015\Documents\GitHub\SC2015\SubscriberWebService\SubscriberWebService\bin\Contract\wsdl\push.wsdl
+C:\Users\sc2015\Documents\GitHub\SC2015\SubscriberWebService\SubscriberWebService\bin\Contract\xsd\DATEXIISchema_2_2_0withdefinitions.xsd
+C:\Users\sc2015\Documents\GitHub\SC2015\SubscriberWebService\SubscriberWebService\bin\SubscriberWebService.dll.config
+C:\Users\sc2015\Documents\GitHub\SC2015\SubscriberWebService\SubscriberWebService\bin\SubscriberWebService.dll
+C:\Users\sc2015\Documents\GitHub\SC2015\SubscriberWebService\SubscriberWebService\bin\SubscriberWebService.pdb
+C:\Users\sc2015\Documents\GitHub\SC2015\SubscriberWebService\SubscriberWebService\bin\GZipEncoder.dll
+C:\Users\sc2015\Documents\GitHub\SC2015\SubscriberWebService\SubscriberWebService\bin\log4net.dll
+C:\Users\sc2015\Documents\GitHub\SC2015\SubscriberWebService\SubscriberWebService\bin\GZipEncoder.pdb
+C:\Users\sc2015\Documents\GitHub\SC2015\SubscriberWebService\SubscriberWebService\obj\Release\SubscriberWebService.csprojResolveAssemblyReference.cache
+C:\Users\sc2015\Documents\GitHub\SC2015\SubscriberWebService\SubscriberWebService\obj\Release\SubscriberWebService.dll
+C:\Users\sc2015\Documents\GitHub\SC2015\SubscriberWebService\SubscriberWebService\obj\Release\SubscriberWebService.pdb

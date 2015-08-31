@@ -28,13 +28,13 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.TreeNode treeNode1 = new System.Windows.Forms.TreeNode("T");
-            System.Windows.Forms.TreeNode treeNode2 = new System.Windows.Forms.TreeNode("L");
+            System.Windows.Forms.TreeNode treeNode1 = new System.Windows.Forms.TreeNode("POINT DATA");
+            System.Windows.Forms.TreeNode treeNode2 = new System.Windows.Forms.TreeNode("LINE DATA");
             System.Windows.Forms.TreeNode treeNode3 = new System.Windows.Forms.TreeNode("Traffic flow", new System.Windows.Forms.TreeNode[] {
             treeNode1,
             treeNode2});
-            System.Windows.Forms.TreeNode treeNode4 = new System.Windows.Forms.TreeNode("T");
-            System.Windows.Forms.TreeNode treeNode5 = new System.Windows.Forms.TreeNode("L");
+            System.Windows.Forms.TreeNode treeNode4 = new System.Windows.Forms.TreeNode("POINT DATA");
+            System.Windows.Forms.TreeNode treeNode5 = new System.Windows.Forms.TreeNode("LINE DATA");
             System.Windows.Forms.TreeNode treeNode6 = new System.Windows.Forms.TreeNode("Traffic speed", new System.Windows.Forms.TreeNode[] {
             treeNode4,
             treeNode5});
@@ -56,11 +56,11 @@
             this.treeView1 = new System.Windows.Forms.TreeView();
             this.button2 = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.button3 = new System.Windows.Forms.Button();
             this.dateTimePicker2 = new System.Windows.Forms.DateTimePicker();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.button3 = new System.Windows.Forms.Button();
             this.flowLayoutPanel1.SuspendLayout();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -113,22 +113,26 @@
             this.treeView1.Margin = new System.Windows.Forms.Padding(10);
             this.treeView1.Name = "treeView1";
             treeNode1.Name = "Node4";
-            treeNode1.Text = "T";
+            treeNode1.Text = "POINT DATA";
             treeNode2.Name = "Node5";
-            treeNode2.Text = "L";
+            treeNode2.Text = "LINE DATA";
             treeNode3.Name = "Node0";
+            treeNode3.NodeFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             treeNode3.Text = "Traffic flow";
+            treeNode4.Checked = true;
             treeNode4.Name = "Node6";
-            treeNode4.Text = "T";
+            treeNode4.Text = "POINT DATA";
             treeNode5.Name = "Node7";
-            treeNode5.Text = "L";
+            treeNode5.Text = "LINE DATA";
             treeNode6.Name = "Node1";
+            treeNode6.NodeFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             treeNode6.Text = "Traffic speed";
             treeNode7.Name = "Node8";
             treeNode7.Text = "VMS";
             treeNode8.Name = "Node9";
             treeNode8.Text = "Matrix";
             treeNode9.Name = "Node2";
+            treeNode9.NodeFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             treeNode9.Text = "Signals";
             treeNode10.Name = "Node10";
             treeNode10.Text = "Roadworks";
@@ -137,6 +141,7 @@
             treeNode12.Name = "Node12";
             treeNode12.Text = "Weather events";
             treeNode13.Name = "Node3";
+            treeNode13.NodeFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             treeNode13.Text = "Events";
             this.treeView1.Nodes.AddRange(new System.Windows.Forms.TreeNode[] {
             treeNode3,
@@ -145,6 +150,7 @@
             treeNode13});
             this.treeView1.Size = new System.Drawing.Size(254, 253);
             this.treeView1.TabIndex = 0;
+            this.treeView1.AfterSelect += new System.Windows.Forms.TreeViewEventHandler(this.treeView1_AfterSelect);
             // 
             // button2
             // 
@@ -170,9 +176,18 @@
             this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel2.Location = new System.Drawing.Point(3, 320);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(254, 238);
+            this.panel2.Size = new System.Drawing.Size(254, 321);
             this.panel2.TabIndex = 2;
             this.panel2.Visible = false;
+            // 
+            // button3
+            // 
+            this.button3.Location = new System.Drawing.Point(151, 106);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(75, 23);
+            this.button3.TabIndex = 4;
+            this.button3.Text = "SEND";
+            this.button3.UseVisualStyleBackColor = true;
             // 
             // dateTimePicker2
             // 
@@ -205,15 +220,6 @@
             this.label1.Size = new System.Drawing.Size(41, 13);
             this.label1.TabIndex = 0;
             this.label1.Text = "FROM:";
-            // 
-            // button3
-            // 
-            this.button3.Location = new System.Drawing.Point(151, 106);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(75, 23);
-            this.button3.TabIndex = 4;
-            this.button3.Text = "SEND";
-            this.button3.UseVisualStyleBackColor = true;
             // 
             // SensorControl
             // 
